@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>create account</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
+         <script src="index.js"></script>
+        </head>
+    
+        <body>
+            <div class="container"></div>
+                <form id="formulario">
+                <div class="title">Create Account</div>
+           
+
+            <div>
+                <label for="username">Nombre</label>
+                <input type="text" name="username" id="username" placeholder="Martin Lopez" />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+              </div>
+
+      <div>         
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="MartinLopez@gmail.com" />
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+
+    <div>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Contraseña" minlength="8;" />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="Repeatpassword">Repetir Contraseña</label>
+        <input type="Repeatpassword" name="Repeatpassword" id="Repeatpassword" placeholder="Repita Contraseña" minlength="8;" />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+              
+      <button type="submit" id="submit">ENVIAR</button>
+    </form>
+  </div>
+
+        </body>
+</html>
