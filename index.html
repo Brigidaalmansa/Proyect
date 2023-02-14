@@ -1,54 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>create account</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
-         <script src="index.js"></script>
-        </head>
-    
-        <body>
-            <div class="container"></div>
-                <form id="formulario">
-                <div class="title">Create Account</div>
-           
 
-            <div>
-                <label for="username">Nombre</label>
-                <input type="text" name="username" id="username" placeholder="Martin Lopez" />
-                <i class="fas fa-exclamation-circle failure-icon"></i>
-                <i class="far fa-check-circle success-icon"></i>
-                <div class="error"></div>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <div>         
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="MartinLopez@gmail.com" />
-      <i class="fas fa-exclamation-circle failure-icon"></i>
-      <i class="far fa-check-circle success-icon"></i>
-      <div class="error"></div>
-    </div>
+  <div class="container">
 
-    <div>
+    <form action="" class="form" id="form" autocomplete="off">
+      <h2>Create Account</h2>
+
+
+      <div class="form-input myname">
+        <label for="myname">Nombre</label>
+        <input type="text" id="myname" placeholder="Martin Lopez">
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <p class="mensajeError"></p>
+      </div>
+
+
+
+      <div class="form-input email">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="abc@gmail.com">
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <p class="mensajeError"></p>
+       </div>
+
+
+      <div class="form-input password">
         <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" placeholder="Contraseña" minlength="8;" />
+        <input type="password" id="password" placeholder="Contraseña" minlength="8;">
         <i class="fas fa-exclamation-circle failure-icon"></i>
         <i class="far fa-check-circle success-icon"></i>
-        <div class="error"></div>
+        <p class="mensajeError"></p>
       </div>
+      
+      
+      <div class="form-input repeatPassword">
+        <label for="repeatPassword">Repetir Contraseña</label>
+        <input type="password" id="repeatPassword" placeholder="Repetir Contraseña" minlength="8;">
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <p class="mensajeError"></p>
+       </div>
+   
 
-      <div>
-        <label for="Repeatpassword">Repetir Contraseña</label>
-        <input type="Repeatpassword" name="Repeatpassword" id="Repeatpassword" placeholder="Repita Contraseña" minlength="8;" />
-        <i class="fas fa-exclamation-circle failure-icon"></i>
-        <i class="far fa-check-circle success-icon"></i>
-        <div class="error"></div>
-      </div>
-              
+    <div class="form-boton" >
       <button type="submit" id="submit">ENVIAR</button>
-    </form>
-  </div>
-
-        </body>
+    </div>
+    <p class="mensajeCorrecto"></p>
+  </form>
+</div>
+<script src="index3.js"></script>
+</body>
 </html>

@@ -1,38 +1,10 @@
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 160px;
-    padding: 50px;
-}
+/* ---- GENERALES ---- */
 
-.titulo {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  label {
-    display:flex;
-    margin-bottom: 15px;
-  }
-
-  form div input {
-    width: 100%;
-    height: 40px;
-    outline: none;
-    border: 2px solid #c4c4c4;
-    padding: 0 30px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  form div {
-    position: relative;
-    margin-bottom: 25px;
-   justify-content:center;
-   font:  16px sans-serif;color: rgb(104, 81, 235)
-
-  }
+html{
+    background-color: rgb(38, 17, 65);
+    padding-right: 20px;
+    
+}  
 
   body {
     width: 300px;
@@ -42,20 +14,59 @@ form {
     border: 5px solid #122488;
     border-style:ridge;
   }
-  h2{
+  
+h2 {
+    color: rgb(104, 81, 235);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center; 
+    font:  25px sans-serif;color: rgb(104, 81, 235)
+    
+
+}
+  /* ---- FORMULARIO ---- */
+
+
+ 
+  
+  .form-titulo {
     color: rgb(104, 81, 235);
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-text-align: center;    
-    
-}
+text-align: center; 
+font:  16px sans-serif;color: rgb(104, 81, 235)
+  }
+  
+  
+  
+  .form-input label {
+    display: contents;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font:  16px sans-serif;color: rgb(104, 81, 235)
+   
+  }
 
-html{
-    background-color: rgb(38, 17, 65);
-    padding-right: 20px;
-    
-}
+  .form-div {
+    display: contents;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font:  16px sans-serif;color: rgb(104, 81, 235)
 
-button {
+  }
+  
+  .form-input input{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+
+  
+  .form-boton input {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 120px;
@@ -69,7 +80,22 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-}
+  }
+  
+ 
+  .mensajeError {
+    color: red;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+  
 
 .failure-icon,
 .error {
@@ -80,14 +106,8 @@ button {
   color: green;
 }
 
-.error {
-  font-size: 14.5px;
-  margin-top: 5px;
-}
-
 .success-icon,
 .failure-icon {
   right: 0;
   opacity: 0;
-
 }
